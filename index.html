@@ -4,11 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Genesis Portfolio Template</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Mulish?query=Mulish">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/picture.css">
+    <link rel="stylesheet" href="style/service.css">
+    <link rel="stylesheet" href="pages/projects.html">
+
 </head>
+<style>
+    .grid-Awards {
+        display: grid;
+        margin-top: 101px;
+        grid-template-columns: auto 200px 200px 100px;
+        grid-template-rows: repeat(190px);
+        gap: 40px;
+        -ms-layout-grid-line: 1px;
+    }
+    
+    .grid-Awards--column1 {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        gap: 40px;
+    }
+    
+    .grid-Awards--column2 {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+        gap: 40px;
+    }
+    
+    .grid-Awards--column3 {
+        display: grid;
+        grid-template-rows: repeat(8, auto);
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: normal;
+        gap: 40px;
+    }
+    
+    .grid-Awards--column4 {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: normal;
+        justify-self: self-end;
+        gap: 40px;
+    }
+    
+    .grid-footer {
+        display: grid;
+        grid-template-columns: auto, repeat(2, 200px);
+        justify-content: space-between;
+        margin-top: 91px;
+    }
+    
+    .grid-footer>ul,
+    li {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+</style>
 
 <body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/logo/Logo.svg" alt="logo"></a>
+            <ul>
+                <li><a href="pages/Projects.html">Projects</a></li>
+                <li><a href="pages/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div>
+                <p class="header-title">Shooting Stars</p>
+                <p class="header-description">Hello, I’m Bakhtiyar Sattarov, <b style="color: #4A4FF2;">product designer</b> with experience in studios and startups</p>
+            </div>
+            <div class="header-text">
+                <img class="header-image--style" src="/images/line.svg" alt="line">
+                <p class="header-text--style">Design is about progress</p>
+            </div>
+        </div>
+    </header>
+    <section class="grid-picture">
+        <div class="grid-column1">
+            <img src="/pictures/picture1.svg" alt="picture1" style="width: 357px; height: 413px;">
+            <img src="/pictures/picture4.svg" alt="picture1" style="width: 357px; height: 475px;">
+            <img src="/pictures/picture7.svg" alt="picture1" style="width: 357px; height: 475px;">
+            <img src="/pictures/picture10.svg" alt="picture1" style="width: 357px; height: 537px;">
+        </div>
+        <div class="grid-column2">
+            <img src="/pictures/picture2.svg" alt="picture2" style="width: 356px; height: 351px;">
+            <img src="/pictures/picture5.svg" alt="picture2" style="width: 350px; height: 413px;">
+            <img src="/pictures/picture8.svg" alt="picture2" style="width: 356px; height: 537px;">
+            <img src="/pictures/picture11.svg" alt="picture2" style="width: 356px; height: 599px;">
+        </div>
+        <div class="grid-column3">
+            <img src="/pictures/picture3.svg" alt="picture3" style="width: 350px; height: 599px;">
+            <img src="/pictures/picture6.svg" alt="picture3" style="width: 357px; height: 413px;">
+            <img src="/pictures/picture9.svg" alt="picture3" style="width: 357px; height: 537px;">
+            <img src="/pictures/picture12.svg" alt="picture3" style="width: 350px; height: 351px;">
+        </div>
+    </section>
+    <section class="grid-service">
+        <p>We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</p>
+        <ul>
+            <li>Multimedia</li>
+            <li>Interactive Design</li>
+            <li>Branding</li>
+        </ul>
+        <ul>
+            <li>Creative design</li>
+            <li>Packaging</li>
+            <li>Coding</li>
+        </ul>
+    </section>
+    <section class="grid-Awards">
+        <div class="grid-Awards--column1">
+            <div>Awwwards</div>
+            <div>CSSDesignAwards</div>
+        </div>
+        <div class="grid-Awards--column2">
+            <div>Site of the day</div>
+            <div>Best navigation</div>
+            <div>Site of the day</div>
+            <div>Best navigation</div>
+        </div>
+        <div class="grid-Awards--column3">
+            <div>Genesis UI Kit</div>
+            <div style="opacity: 0.5;">Application that helps to find nearest sport centres in your area</div>
+            <div>Genesis Template</div>
+            <div style="opacity: 0.5;">Application that helps to find nearest sport centres</div>
 
+            <div>Genesis UI Kit</div>
+            <div style="opacity: 0.5;">Application that helps to find nearest sport centres</div>
+            <div>Genesis Template</div>
+            <div style="opacity: 0.5;">Application that helps to find nearest sport centres</div>
+        </div>
+        <div class="grid-Awards--column4">
+            <div>2018</div>
+            <div>2018</div>
+            <div>2017</div>
+            <div>2016</div>
+        </div>
+    </section>
+    <footer class="grid-footer">
+        <div>
+            <img src="/logo/Logo.svg" alt="logo">
+        </div>
+        <div>
+            <ul>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><img src="/icons/dribbble-logo.svg" alt="dribbble-logo"></li>
+                <li><img src="/icons/instagram.svg" alt="instagram"></li>
+                <li><img src="/icons/twitter-logo-silhouette.svg" alt="twitter-logo-silhouette"></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

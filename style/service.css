@@ -1,0 +1,20 @@
+.grid-service {
+    display: grid;
+    grid-template-columns: 635px auto auto;
+    grid-row: 106px;
+    font-size: 28px;
+    gap: 13px;
+    font-weight: bold;
+    margin-top: 91px;
+}
+
+.grid-service ul,
+li {
+    display: grid;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 18px;
+    font-weight: lighter;
+    opacity: 0.5;
+}
