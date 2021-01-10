@@ -1,12 +1,15 @@
 body {
     background-color: #FFFFFF;
-    padding-top: 61px;
-    padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-top: 61px;
+    margin-bottom: 10px;
+    margin-left: 125px;
+    margin-right: 125px;
     font-family: Mulish, sans-serif;
     color: #111111;
 }
+
+
+/* Navigation and Logo Section */
 
 .logo {
     display: grid;
@@ -33,6 +36,9 @@ a:focus,
 a:active {
     color: #ffcc22;
 }
+
+
+/* Header and information section */
 
 .header {
     display: grid;
@@ -96,6 +102,7 @@ a:active {
     display: grid;
     grid-template-rows: auto auto auto auto;
     row-gap: 15px;
+    justify-items: right;
 }
 
 
@@ -125,27 +132,41 @@ li {
 
 /* Awards Section */
 
-.grid-Awards {
+.grid-Awards1 {
     display: grid;
-    grid-template-columns: 500px 200px 200px 210px;
-    grid-template-rows: 33px 120px 33px 123px 33px 120px 33px 120px;
+    margin-top: 96px;
+    grid-template-columns: 500px 190px 180px 110px;
+    grid-template-rows: auto auto auto auto;
     text-align: left;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 0px;
     font-size: 16px;
-    column-gap: 30px;
-    margin-top: 96px;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.grid-Awards2 {
+    display: grid;
+    grid-template-columns: 500px 190px 180px 110px;
+    grid-template-rows: auto auto auto auto;
+    text-align: left;
+    border-bottom: 1px solid grey;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.grid-Awards-style {
+    opacity: 0.5;
+    padding-bottom: 40px;
 }
 
 .grid-Awards__name1 {
     grid-area: 1 / 1 / span 4 / span 1;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.grid-Awards__name2 {
-    grid-area: 5 / 1 / span 4 / span 1;
     font-size: 22px;
     font-weight: bold;
 }
@@ -162,38 +183,14 @@ li {
     font-weight: bold;
 }
 
-.grid-Awards__name--sub3 {
-    grid-area: 5 / 2 / span 2 / span 1;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.grid-Awards__name--sub4 {
-    grid-area: 7 / 2 / span 2 / span 1;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.grid-Awards__year--sub1 {
+.grid-Awards__year1 {
     grid-area: 1 / 4 / span 2 / span 1;
     font-size: 16px;
     font-weight: normal;
 }
 
-.grid-Awards__year--sub2 {
+.grid-Awards__year2 {
     grid-area: 3 / 4 / span 2 / span 1;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.grid-Awards__year--sub3 {
-    grid-area: 5 / 4 / span 2 / span 1;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.grid-Awards__year--sub4 {
-    grid-area: 7 / 4 / span 2 / span 1;
     font-size: 16px;
     font-weight: normal;
 }
