@@ -1,0 +1,7 @@
+.grid-contact__picture {
+    display: grid;
+    grid-template-rows: 100%;
+    row-gap: 96px;
+    padding-top: 96px;
+    justify-content: center;
+}
